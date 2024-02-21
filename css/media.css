@@ -1,0 +1,52 @@
+html {
+  font-size: 62.5%;
+}
+
+@media (max-width: 768px) {
+  .navBar .mobile-navBar {
+    display: block;
+    border: 0.3rem solid #212529;
+    text-align: center;
+    padding: 0.5rem 0 0 0;
+    z-index: 999;
+    color: #212529;
+  }
+
+  .navBar nav {
+    /* display: none; */
+    width: 100%;
+    height: 100vh;
+    background-color: #e7f5ff;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s linear;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .navBar .navBar-nav .navList {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .active .navBar-nav {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .active .mobile-navBar .mobile-icon[name="close-outline"] {
+    display: block;
+  }
+
+  .active .mobile-navBar .mobile-icon[name="menu-outline"] {
+    display: none;
+  }
+}

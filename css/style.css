@@ -1,0 +1,798 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #f1f1f1 !important;
+}
+
+:root {
+  --topHeader: #171717;
+  --white: #fff;
+  --black: #000;
+  --lgRed: #da1212;
+  --lgBlue: #041562;
+  --gold: #f26e0d;
+}
+
+/* Top Header Css Starts Here */
+#top-header {
+  height: 3rem;
+  width: 100%;
+  background-color: var(--lgBlue);
+  color: var(--white);
+  font-size: 1.1rem;
+}
+
+#top-header .row {
+  padding: 0.4rem 3.2rem;
+  --bs-gutter-x: none;
+}
+
+#top-header .row .col-md-8 {
+  width: 71%;
+}
+
+#top-header .row .col-md-4 {
+  width: 25%;
+  font-size: 1.2rem;
+}
+
+#top-header .row .col-md-8 .phoneNumber {
+  padding: 0 0 0 4.2rem;
+}
+
+#top-header .row .col-md-4 .row {
+  margin: 0;
+  padding: 0;
+}
+
+#top-header .row .col-md-4 .row {
+  margin: 0 0 0 22rem;
+}
+#top-header .row .col-md-4 .col-md-2 {
+  width: 50%;
+}
+
+#top-header .row .col-md-4 .thBorder {
+  border: 0.1rem solid var(--white);
+  border-radius: 0.5rem;
+  width: 50%;
+  text-align: center;
+  font-size: 1.4rem;
+  transition: 0.6s ease-in-out;
+}
+
+#top-header .row .col-md-4 .thBorder a {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.6s ease-in-out;
+}
+
+#top-header .row .col-md-4 .thBorder:hover {
+  background-color: var(--white);
+}
+
+#top-header .row .col-md-4 .thBorder:hover .socialMedia {
+  color: var(--black);
+}
+
+/* Top Header CSS Ends Here */
+
+/* NavBar CSS Starts Here */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  padding: 1rem 2rem;
+  font-family: "Heebo", sans-serif;
+  height: 5rem;
+}
+
+.navBar .logo {
+  height: 4rem;
+  width: auto;
+}
+
+.navBar .navList {
+  display: flex;
+  gap: 4rem;
+  list-style: none;
+}
+
+.navBar .navList .navLinks:link,
+.navBar .navList .navLinks:visited {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.navBar .navList .navLinks:hover {
+  color: var(--lgBlue);
+  border-bottom: 0.6rem solid var(--lgBlue);
+}
+
+.navBar .mobile-navBar {
+  display: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.navBar .mobile-navBar .mobile-icon {
+  height: 1.8rem;
+  width: 3rem;
+  font-size: 2rem;
+  color: #212529;
+}
+
+.mobile-icon[name="close-outline"] {
+  display: none;
+}
+
+/* NavBar CSS Ends Here */
+
+/* Hero CSS Starts Here */
+#hero .bg {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("../images/group.jpg");
+  min-height: 50rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero .bg h5 {
+  color: var(--white);
+}
+
+#hero .bg .text {
+  padding: 15rem 0 5rem 0;
+}
+
+#hero .bg .text h5 {
+  font-size: 3rem;
+}
+
+#hero .bg p {
+  padding: 0 18rem;
+  font-size: 2rem;
+}
+
+/* Hero CSS Ends Here */
+
+/* Course Section CSS Starts Here */
+
+#courses {
+  margin: 1rem 0;
+  min-height: 30rem;
+  max-height: 106rem;
+}
+
+#courses .header h3 {
+  font-size: 3.4rem;
+  color: var(--lgRed);
+  font-weight: 600;
+}
+
+#courses .content {
+  padding: 2rem 14rem;
+}
+
+#courses .content p {
+  font-size: 1.8rem;
+}
+
+#courses .main .box {
+  height: 200px;
+  width: 200px;
+  border: 0px;
+  box-shadow: 5px 4px 15px #ac9595;
+  border-radius: 5px;
+  border-bottom: 5px solid var(--lgBlue);
+  transition: width 0.4s;
+  transition: height 0.4s;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+
+#courses .main .box .top {
+  height: 5rem;
+  width: 5rem;
+  color: var(--white);
+  font-size: 2.6rem;
+  border-radius: 50%;
+  background-color: var(--lgBlue);
+  text-align: center;
+  line-height: 5rem;
+  transition: 0.5s ease-in-out;
+}
+
+#courses .main .box .upper {
+  padding: 1.4rem 7.5rem;
+}
+
+#courses .main .box .pgContent {
+  color: var(--black);
+  font-size: 1.5rem;
+  font-weight: 600;
+  transition: 0.5s ease-in-out;
+}
+
+#courses .box .footBtn .newBtn {
+  height: 3rem;
+  width: 10rem;
+  background-color: #041562;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  transition: 0.4s ease-in-out;
+  font-size: 1.6rem;
+}
+
+#courses .box .footBtn .newBtn:hover {
+  width: 12rem;
+  background-color: var(--lgRed);
+}
+
+/* Course Section CSS Ends Here */
+
+/* About Us Section CSS Starts Here */
+#aboutUs {
+  min-height: 40vh;
+  background-color: var(--topHeader);
+  color: var(--white);
+  text-align: center;
+  margin: 2rem 0;
+  padding: 2rem 0;
+}
+
+#aboutUs .header h3 {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+#aboutUs .text {
+  text-align: left;
+}
+
+#aboutUs .text p {
+  font-size: 1.8rem;
+}
+
+#aboutUs .text .col-md-7 .abtUsQlty {
+  margin: 12rem 8rem;
+}
+
+#aboutUs .text .col-md-7 .abtUsQlty h5 {
+  font-size: 3rem;
+}
+
+#aboutUs .text .col-md-7 .abtUsQlty h6 {
+  font-size: 2rem;
+}
+
+#aboutUs .button {
+  margin: 1.2rem 0;
+}
+
+#aboutUs .button .moreBtn {
+  height: 4rem;
+  width: 10em;
+  background-color: var(--lgRed);
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--white);
+  transition: 0.5s ease-in-out;
+}
+
+#aboutUs .button .moreBtn:hover {
+  background-color: var(--lgBlue);
+}
+/* About Us Section CSS Ends Here */
+
+/* Gallery CSS Starts Here */
+#gallery .headerText h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.7rem;
+  color: var(--lgRed);
+}
+
+#gallery .mainGalleryContent .gallery-container {
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  min-height: 85vh;
+  overflow: hidden;
+}
+
+#gallery .mainGalleryContent .gallery {
+  width: 100%;
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#gallery .mainGalleryContent .gallery-item {
+  flex: 0 0 auto;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery .mainGalleryContent .gallery-item img {
+  height: 60rem;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+#gallery .mainGalleryContent .gallery-controls {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#gallery .mainGalleryContent .gallery-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--lgRed);
+  color: var(--white);
+  cursor: pointer;
+  transition: background-color 0.4s ease;
+  font-size: 1.5rem;
+}
+
+#gallery .mainGalleryContent .gallery-button:hover {
+  background-color: var(--lgBlue);
+}
+/* Gallery CSS Ends Here */
+
+/* Helped CSS Starts Here */
+
+#helped {
+  background-color: var(--lgRed);
+  min-height: 60vh;
+  margin: 2rem 0;
+}
+
+#helped .row .col-md-6 .helpedImg {
+  margin: 5rem 0;
+}
+
+#helped .row .col-md-6 .right .title h3 {
+  font-size: 3.6rem;
+  margin: 6rem 0;
+  color: var(--white);
+}
+
+#helped .row .col-md-6 .right .contentPg {
+  text-align: left;
+  font-size: 2rem;
+  color: var(--white);
+}
+/* Helped CSS Ends Here */
+
+/* Vision Mission CSS Starts Here */
+#vsnMsn .content .title h2 {
+  font-size: 3.8rem;
+  color: var(--lgBlue);
+}
+
+#vsnMsn .content .title h3 {
+  color: var(--lgRed);
+  font-size: 3.2rem;
+}
+
+#vsnMsn .content .mainContent {
+  margin: 5rem auto;
+}
+
+#vsnMsn .content .mainContent .col-md-6 .box {
+  height: 30rem;
+  width: 50rem;
+  border: 0.2rem solid var(--gold);
+  border-radius: 0.5rem;
+  background-image: url("../images/visionBg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 15px #c0c0c0;
+  margin: 4rem auto;
+}
+
+#vsnMsn .content .mainContent .col-md-6 .box .ttl {
+  margin: 2rem 0 0 0;
+}
+#vsnMsn .content .mainContent .col-md-6 .box .ttl h2 {
+  font-size: 3.6rem;
+  color: var(--gold);
+}
+
+#vsnMsn .content .mainContent .col-md-6 .box .ccnt {
+  display: flex;
+  height: 15rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#vsnMsn .content .mainContent .col-md-6 .box .ccnt p {
+  font-size: 2rem;
+  padding: 0 2rem;
+}
+/* Vision Mission CSS Ends Here */
+
+/* Review Section CSS Starts Here */
+
+#review {
+  background-image: url("../images/nxtBg.jpg");
+  background-color: #f1f1f1;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  padding: 2rem 0;
+  min-height: 90vh;
+}
+
+#review .head {
+  margin: 0 0 4rem 0;
+}
+
+#review .head h3 {
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+#review .mainContent .col-md-4 .box {
+  height: 20rem;
+  width: 90%;
+  border: none;
+  border-radius: 0.7rem;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px #aaa8a8;
+  background-color: var(--white);
+  color: var(--black);
+  display: flex;
+  justify-content: center;
+  transition: 0.6s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover {
+  min-height: 25rem;
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+#review .mainContent .col-md-4 .box .photo img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  transition: 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .photo img {
+  transform: translate3d(0%, -50px, 1000px);
+  height: 9rem;
+  width: 8rem;
+}
+
+#review .mainContent .col-md-4 .box .name .pstrName {
+  color: var(--gold);
+  font-size: 2rem;
+  margin: 1.5rem 0 0 0;
+  transition: transform 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .name .pstrName {
+  transform: translate3d(0%, -50px, 1000px);
+}
+
+#review .mainContent .col-md-4 .box .name h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .name h4 {
+  transform: translate3d(0%, -50px, 1000px);
+}
+
+#review .mainContent .col-md-4 .box .msg {
+  width: 30rem;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  text-transform: uppercase;
+  transform: translate3d(0%, -5px, 1000px);
+}
+
+#review .mainContent .col-md-4 .box .msg p {
+  font-size: 1.5rem;
+  opacity: 0;
+  color: var(--black);
+  transition: opacity 0.6s ease-in, display 0.6s ease-in;
+}
+
+#review .mainContent .col-md-4 .box:hover .msg,
+#review .mainContent .col-md-4 .box:hover .msg p {
+  transform: translate3d(0%, -45px, 1000px);
+  opacity: 1;
+  visibility: visible;
+  filter: blue(0);
+  text-shadow: 0.01px 0.01px 0.05rem #000;
+  transition-delay: 0.6s;
+}
+
+#review .mainContent .box .extraInfo .tap,
+#review .mainContent .box .extraInfo .hover {
+  font-size: 1.5rem;
+  color: rgb(168, 164, 164);
+}
+
+#review .mainContent .box .extraInfo .tap {
+  display: none;
+}
+
+#review .mainContent .col-md-4 .box:hover .tap,
+#review .mainContent .col-md-4 .box:hover .hover {
+  display: none;
+}
+/* Review Section CSS Ends Here */
+
+/* Hidden And Show CSS Starts Here */
+
+#card .box {
+  height: 10rem;
+  width: 10rem;
+  border: 0.1rem solid #000;
+  text-align: center;
+  border-radius: 0.2rem;
+  margin: 0 0.5rem;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: opacity 1.3s, transform 1.3s;
+}
+
+.hiddenBox {
+  opacity: 0;
+  filter: blur(1px);
+  transform: translateY(50%);
+  transition: 4s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/* Hidden And Show CSS Ends Here */
+
+/* Contact Us CSS Starts Here */
+
+#breadCrumb .main {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/contactUs.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#breadCrumb .main .text {
+  padding: 18rem 1.5rem;
+}
+
+#breadCrumb .main h3 {
+  color: var(--white);
+  font-size: 3.5rem;
+}
+
+#breadCrumb .main span,
+#breadCrumb .main a {
+  font-size: 1.8rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#mndhlp {
+  margin: 2rem 0;
+}
+
+#mndhlp h3 {
+  color: var(--topHeader);
+  font-size: 2rem;
+}
+
+#mndhlp span.first {
+  color: var(--lgBlue);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#mndhlp span.second {
+  color: var(--lgRed);
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#map {
+  min-height: 65vh;
+  margin: 2rem 0;
+}
+
+#map .main .mainMap {
+  height: 60vh;
+  width: 100%;
+  border: 0.5rem solid var(--topHeader);
+}
+
+#getInTouch {
+  min-height: 60vh;
+}
+
+#getInTouch .header h3 {
+  color: var(--lgRed);
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+#getInTouch .body .card {
+  height: 10rem;
+  width: 40rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(214, 208, 208);
+  padding: 0.4rem 1rem;
+  margin: 2rem 0;
+}
+
+#getInTouch .body .card .col-md-4 {
+  font-size: 2rem;
+  color: var(--white);
+  background-color: var(--lgRed);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 2rem 1rem;
+}
+
+#getInTouch .body .card .col-md-8 h5 {
+  margin: 2rem 0 0 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+#getInTouch .body .card .col-md-8 {
+  width: 86%;
+}
+
+#getInTouch .body .card .col-md-8 h6 {
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+#form {
+  min-height: 95vh;
+  background-color: #c0c0c0;
+  margin: 2rem 0;
+}
+
+#form .container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#form .header {
+  padding: 2rem 0;
+}
+
+#form .header h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--lgRed);
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+#form .body form h5 {
+  font-size: 1.8rem;
+  width: 13rem;
+  font-weight: 500;
+}
+
+#form .body form div {
+  margin: 0 0 1rem 0;
+}
+
+#form .body form input {
+  outline: none;
+  border: 0.1rem solid var(--black);
+  border-radius: 0.4rem;
+  padding: 0 0.5rem;
+  background: #fff;
+  height: 2.5rem;
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+#form .body form textarea {
+  border: 0.1rem solid var(--black);
+  border-radius: 0.4rem;
+  padding: 0 0.5rem;
+  outline: none;
+  font-size: 1.7rem;
+}
+
+#form .body form input:focus,
+#form .body form textarea:focus {
+  border: 0.19rem solid var(--lgRed);
+}
+
+#form .body form .buttons button {
+  height: 3rem;
+  width: 10rem;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: var(--lgRed);
+  color: var(--white);
+  font-size: 2rem;
+  transition: 0.5s ease-in-out;
+}
+
+#form .body form .buttons button:hover {
+  background-color: var(--lgBlue);
+}
+
+/* Contact Us CSS Ends Here */

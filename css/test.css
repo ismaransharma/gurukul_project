@@ -1,0 +1,226 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --topHeader: #171717;
+  --white: #fff;
+  --black: #000;
+  --lgRed: #da1212;
+  --lgBlue: #041562;
+  --gold: #f26e0d;
+}
+
+#coursesArea .col-md-4 {
+  margin: 4rem 0;
+}
+
+#coursesArea .col-md-4 .box {
+  height: 20rem;
+  width: 20rem;
+  background-color: #c0c0c0;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.7s ease-in-out;
+}
+/* 
+#coursesArea .col-md-4 .box:hover {
+  background-color: #041562;
+}
+
+#coursesArea .col-md-4 .box:hover .header {
+  color: #fff;
+}
+
+#coursesArea .col-md-4 .box:hover .content p {
+  color: #fff;
+}
+
+#coursesArea .col-md-4 .box .header {
+  font-size: 3rem;
+  text-align: center;
+  transition: 0.7s ease-in-out;
+  margin: 2rem 0;
+}
+
+#coursesArea .col-md-4 .box .content {
+  margin: 1rem 1.5rem;
+}
+
+#coursesArea .col-md-4 .box .content p {
+  font-size: 1.6rem;
+  color: #000;
+  text-align: center;
+  transition: 0.7s ease-in-out;
+} */
+
+#coursesArea .col-md-4 .box:hover {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+}
+
+#coursesArea .col-md-4 .box .header {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#coursesArea .col-md-4 .box .content {
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Button Css */
+.button {
+  text-align: center;
+}
+
+.button .newBtn {
+  height: 3rem;
+  width: 10rem;
+  background-color: #041562;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-top-right-radius: 6rem;
+  border-bottom-right-radius: 6rem;
+  transition: 0.4s ease-in-out;
+  font-size: 1.6rem;
+  transition: transform 1s ease-in-out;
+}
+
+.button .newBtn:hover {
+  width: 12rem;
+  background-color: #f26e0d;
+}
+
+#coursesArea .col-md-4 .box:hover .button .newBtn {
+  transform: translate3d(5%, -40%, 100px);
+}
+
+/* Review Section CSS Starts Here */
+
+#review {
+  background-image: url("images/nxtBg.jpg");
+  background-color: #f1f1f1;
+  background-position: center;
+  background-repeat: repeat;
+  text-align: center;
+  padding: 2rem 0;
+  min-height: 90vh;
+}
+
+#review .head {
+  margin: 0 0 4rem 0;
+}
+
+#review .head h3 {
+  font-size: 3rem;
+  color: var(--gold);
+}
+
+#review .mainContent .col-md-4 .box {
+  height: 20rem;
+  width: 25rem;
+  border: none;
+  border-radius: 0.7rem;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 1px 1px 5px #aaa8a8;
+  background-color: var(--white);
+  color: var(--black);
+  transition: 0.5s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover {
+  transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
+  box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
+  height: 30rem;
+  width: 30rem;
+}
+
+#review .mainContent .col-md-4 .box {
+  display: flex;
+  min-height: 2rem;
+  justify-content: center;
+}
+
+#review .mainContent .col-md-4 .box .photo img {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  transition: 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .photo img {
+  transform: translate3d(0%, -50px, 1000px);
+  height: 9rem;
+  width: 8rem;
+}
+
+#review .mainContent .col-md-4 .box .name .pstrName {
+  color: var(--gold);
+  font-size: 2rem;
+  margin: 1.5rem 0 0 0;
+  transition: transform 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .name .pstrName {
+  transform: translate3d(0%, -50px, 1000px);
+}
+
+#review .mainContent .col-md-4 .box .name h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: 0.8s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .name h4 {
+  transform: translate3d(0%, -50px, 1000px);
+}
+
+#review .mainContent .col-md-4 .box .msg {
+  width: 30rem;
+  visibility: hidden;
+  overflow: hidden;
+  transition: 0.8s ease-in-out;
+  text-transform: uppercase;
+}
+
+#review .mainContent .col-md-4 .box .msg p {
+  font-size: 1.5rem;
+  opacity: 0;
+  color: var(--black);
+  transition: opacity 0.6s ease-in-out, display 0.6s ease-in-out;
+}
+
+#review .mainContent .col-md-4 .box:hover .msg,
+#review .mainContent .col-md-4 .box:hover .msg p {
+  transform: translate3d(0%, -45px, 1000px);
+  opacity: 1;
+  visibility: visible;
+  filter: blue(0);
+  text-shadow: 0.01px 0.01px 0.05rem #000;
+  transition-delay: 0.6s;
+}
+
+#review .mainContent .box .extraInfo .tap,
+#review .mainContent .box .extraInfo .hover {
+  font-size: 1.5rem;
+  color: rgb(168, 164, 164);
+}
+
+#review .mainContent .box .extraInfo .tap {
+  display: none;
+}
+
+#review .mainContent .col-md-4 .box:hover .tap,
+#review .mainContent .col-md-4 .box:hover .hover {
+  display: none;
+}
+
+/* Review Section CSS Ends Here */
