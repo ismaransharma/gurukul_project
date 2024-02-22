@@ -894,3 +894,196 @@ body {
 }
 
 /* Gallery CSS Ends Here */
+
+/* About Us CSS Starts Here */
+
+#AboutUsBreadCrumb {
+  width: 100%;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../images/about-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+#AboutUsBreadCrumb .main .text {
+  padding: 18rem 1.5rem;
+}
+
+#AboutUsBreadCrumb .main h3 {
+  color: var(--white);
+  font-size: 3.5rem;
+}
+
+#AboutUsBreadCrumb .main span,
+#AboutUsBreadCrumb .main a {
+  font-size: 1.8rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#abtUs {
+  margin: 5rem 0;
+}
+
+#abtUs .col-md-6 .header h5 {
+  font-size: 3.8rem;
+  color: var(--lgRed);
+}
+
+#abtUs .col-md-6 .pgs p {
+  font-size: 1.6rem;
+  margin: 1.5rem 0;
+}
+
+#abtUs .col-md-6 .image img {
+  height: 100%;
+  width: 100%;
+}
+
+#coreValue {
+  height: 50vh;
+  width: 100%;
+  padding: 5rem 0;
+  margin: 2rem 0;
+  background-color: var(--lgRed);
+}
+
+#coreValue .col-md-3 .image img {
+  height: 20rem;
+  width: 100%;
+}
+
+#coreValue .col-md-4 {
+  margin: 0 23rem;
+}
+
+#coreValue .col-md-4 .bgCoreValue {
+  height: 3.6rem;
+  width: 15rem;
+  border: none;
+  border-radius: 2rem;
+  background-color: var(--white);
+  padding: 0.7rem 0;
+}
+
+#coreValue .col-md-4 .bgCoreValue .header h5 {
+  font-size: 1.7rem;
+  color: var(--topHeader);
+}
+
+#coreValue .col-md-4 .main {
+  margin: 2rem 0;
+}
+
+#coreValue .col-md-4 .main li {
+  font-size: 2.3rem;
+  color: var(--white);
+  list-style: none;
+  margin: 0.2rem 0;
+  font-weight: 500;
+}
+
+#ourTeamMembers {
+  min-height: 100vh;
+}
+
+#ourTeamMembers .col-md-4 {
+  margin: 2rem 0;
+}
+
+#ourTeamMembers .col-md-4 .box {
+  height: 35rem;
+  width: 30rem;
+  background-color: var(--white);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem #c0c0c0;
+  padding: 2rem;
+}
+
+#ourTeamMembers .col-md-4 .image img {
+  height: 18rem;
+  width: 50%;
+}
+
+#ourTeamMembers .col-md-4 .links .feaae {
+  margin: 2rem 0 0 2rem;
+}
+
+#ourTeamMembers .col-md-4 .links .afea {
+  margin: 2rem 0 0 7rem;
+}
+
+#ourTeamMembers .col-md-4 .links .outerBox {
+  font-size: 2rem;
+  color: var(--white);
+  border: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  background-color: var(--lgBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#ourTeamMembers .links .outerBox:hover {
+  background-color: var(--lgRed);
+}
+
+#ourTeamMembers .col-md-4 .links .outerBox a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#allCounts {
+  background-color: var(--lgBlue);
+  height: 20vh;
+  width: 100%;
+  padding: 2rem 0;
+  margin: 3rem 0;
+}
+#allCounts .col-md-4 .row .col-md-2 {
+  font-size: 5rem;
+  color: var(--white);
+  height: 8rem;
+  width: 8rem;
+  border: none;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+#allCounts .col-md-4 .row .col-md-8 .header h3 {
+  margin: 2rem 0 0 1rem;
+}
+
+#allCounts .col-md-4 .row .col-md-8 .main h5 {
+  margin: 0 1rem;
+}
+
+#allCounts .col-md-4 .row .col-md-8 .header h3,
+#allCounts .col-md-4 .row .col-md-8 .main h5 {
+  font-size: 2rem;
+}
+
+.AboutUsCourses {
+  min-height: 80vh;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.AboutUsCourses .main .col-md-3 {
+  margin: 2rem 0;
+}
+
+/* About Us CSS Ends Here */
